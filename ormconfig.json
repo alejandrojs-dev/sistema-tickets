@@ -1,0 +1,22 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "",
+  "database": "tickets",
+  "synchronize": true,
+  "logging": false,
+  "extra": {
+    "connectionLimit": 100
+  },
+  "timezone": "America/Mexico_City",
+  "entities": ["src/entities/**/*.ts"],
+  "migrations": ["src/database/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entities",
+    "migrationsDir": "src/database/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
